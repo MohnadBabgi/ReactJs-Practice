@@ -1,12 +1,27 @@
+import Header from "./Component/Header.jsx"
+import Entry from "./Component/Entry.jsx"
+import data from "./data"
 
-import Header from "./Component/Header"
-import Entry from "./Component/Entry"
 export default function App() {
+    
+    const entryElements = data.map((entry) => {
+        return (
+            <Entry
+                img={entry.img}
+                title={entry.title}
+                country={entry.country}
+                googleMapsLink={entry.googleMapsLink}
+                dates={entry.dates}
+                text={entry.text}
+            />
+        )
+    })
+    
     return (
         <>
             <Header />
             <main className="container">
-                <Entry />
+                {entryElements}
             </main>
         </>
     )
