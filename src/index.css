@@ -99,7 +99,7 @@ article.journal-entry .main-image {
     overflow: hidden;
 }
 footer {
-    background: #F55A5A; /* same red as header for consistency */
+    background: #F55A5A; 
     color: white;
     text-align: center;
     padding: 15px 10px;
@@ -113,14 +113,6 @@ footer p {
 
 footer nav {
     margin-top: 8px;
-}
-
-footer nav a {
-    color: white;
-    margin: 0 10px;
-    font-size: 0.8rem;
-    text-decoration: none;
-    transition: opacity 0.2s ease-in-out;
 }
 
 footer nav a:hover {
