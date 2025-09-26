@@ -1,7 +1,7 @@
 # React Concepts Practice
 
 This repository is for **practicing React concepts**.  
-The project demonstrates how to build **data-driven UIs** in React — the displayed data is **not hardcoded**, but rendered dynamically using React’s features.
+The project demonstrates how to build **data-driven UIs** in React — the displayed data is **not hardcoded**, but rendered dynamically from data.js using React’s features.
 
 ## Run with Docker
 
