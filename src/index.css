@@ -1,5 +1,17 @@
 html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+main {
+    flex: 1;
 }
 
 body {
@@ -85,4 +97,47 @@ article.journal-entry .main-image {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+}
+footer {
+    background: #F55A5A; /* same red as header for consistency */
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+footer nav {
+    margin-top: 8px;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+footer nav a:hover {
+    opacity: 0.7;
+}
+footer nav a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: opacity 0.2s ease-in-out;
+}
+
+footer nav a:hover {
+    opacity: 0.7;
+}
+
+footer nav img.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
