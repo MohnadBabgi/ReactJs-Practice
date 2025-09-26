@@ -11,7 +11,7 @@ export default function Entry(props) {
             <div className="info-container">
                 <img 
                     className="marker"
-                    src="../images/marker.png" 
+                    src="https://cdn-icons-png.flaticon.com/512/684/684908.png" 
                     alt="map marker icon"
                 />
                 <span className="country">{props.country}</span>
