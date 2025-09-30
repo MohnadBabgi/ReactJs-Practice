@@ -15,3 +15,5 @@ Make sure you have **Docker** installed on your machine.
 
 4- Go to your browser: http://localhost:8000   
 
+## Or access it through GitHub Pages: https://mohnadbabgi.github.io/ReactJs-Practice/
+
