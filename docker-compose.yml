@@ -4,4 +4,4 @@ services:
     build: .
     ports:
       - "8000:80"
-    container_name: react-vite-prod
+    container_name: Mohanad-react
