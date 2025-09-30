@@ -1,9 +1,16 @@
+import React from "react"
 import Header from "./Component/Header.jsx"
 import Entry from "./Component/Entry.jsx"
 import Footer from "./Component/Footer.jsx"
+import DarkModeToggle from "./Component/DarkModeToggle.jsx"
 import data from "./data"
-
 export default function App() {
+    const [darkmode, setDarkmode] = React.useState(false)
+    
+    function toggleDarkMode() {
+        setDarkmode((prevMode) => !prevMode)
+    }
+    
     const entryElements = data.map((entry) => {
         return (
             <Entry
@@ -17,14 +24,15 @@ export default function App() {
             />
         )
     })
-
+    
     return (
-        <>
+        <div className={darkmode ? "app-wrapper dark" : "app-wrapper"}>
             <Header />
+            <DarkModeToggle darkmode={darkmode} toggleDarkMode={toggleDarkMode} />
             <main className="container">
                 {entryElements}
             </main>
             <Footer />
-        </>
+        </div>
     )
 }
